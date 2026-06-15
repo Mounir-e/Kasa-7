@@ -1,0 +1,30 @@
+.logementHost {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: #ff6060;
+  font-size: 1.125rem;
+  text-align: right;
+}
+
+.logementHost p {
+  font-weight: 500;
+  width: 50%;
+}
+
+.logementHost img {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+@media  (max-width: 768px) {
+  .logementHost p {
+    font-size: 12px
+  }
+  .logementHost img {
+    width: 32px;
+    height: 32px;
+  }
+}

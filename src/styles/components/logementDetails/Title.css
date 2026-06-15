@@ -1,0 +1,12 @@
+.logementTitle h1 {
+  margin: 0 0 8px;
+  color: #ff6060;
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.logementTitle p {
+  color: #000000;
+  font-weight: 500;
+}

@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
-import { Link } from 'react-router-dom'
 import logementsData from '../datas/logements.json'
-import '../styles/Gallery.css'
+import '../styles/components/Gallery.css'
+import Thumb from './Thumb'
 
 function Gallery() {
   const [logements, setLogements] = useState([])
@@ -15,19 +15,11 @@ function Gallery() {
   }, [])
 
   return (
-    <section className="gallery">
-      {logements.map(({ id, title, cover }) => (
-        <Link key={id} to={`/logement/${id}`} className="gallery-card">
-          <article>
-            <img src={cover} alt={title} className="gallery-card-image" />
-
-            <div className="gallery-card-content">
-              <h2>{title}</h2>
-            </div>
-          </article>
-        </Link>
+    <ul className="gallery">
+      {logements.map((logement) => (
+        <Thumb key={logement.id} logement={logement} />
       ))}
-    </section>
+    </ul>
   )
 }
 

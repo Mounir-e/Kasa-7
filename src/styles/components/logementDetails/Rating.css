@@ -1,0 +1,16 @@
+.logementRating {
+  display: flex;
+  gap: 8px;
+}
+
+.logementRatingStar {
+  width: 24px;
+  height: 24px;
+}
+
+@media (max-width: 768px) {
+  .logementRatingStar {
+    width: 18px;
+    height: 18px;
+  }
+}

@@ -1,0 +1,29 @@
+
+
+.logementCollapses {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 76px;
+}
+
+@media (max-width: 768px) {
+  .logementDetails,
+  .logementCollapses {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .logementDetailsSide {
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .logementTitle h1 {
+    font-size: 18px;
+  }
+  .logementTitle p {
+    font-size: 14px;
+  }
+}
