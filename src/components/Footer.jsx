@@ -1,4 +1,3 @@
-
 import '../styles/components/Footer.css'
 import kasalogofooter from '../assets/logos/logo.svg'
 

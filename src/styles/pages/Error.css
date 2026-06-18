@@ -26,7 +26,7 @@
   font-size: 1.125rem;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 376px) {
   .error {
     gap: 24px;
     padding: 40px 20px;

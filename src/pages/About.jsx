@@ -1,7 +1,7 @@
-import Banner from "../../components/Banner"
-import  Collapse  from "../../components/Collapse"
-import ImgBackground from "../../assets/images/banner-about.jpg"
-import "../../styles/pages/About.css"
+import Banner from '../components/Banner'
+import Collapse from '../components/Collapse'
+import ImgBackground from "../assets/images/banner-about.jpg"
+import '../styles/pages/About.css'
 
 const collapseArray = [
   {
@@ -32,7 +32,7 @@ const collapseArray = [
 
 function About() {
   return (
-    <>
+    
       <main className="about">
         <Banner className="bannerImgAbout"
           picture={ImgBackground}
@@ -51,7 +51,6 @@ function About() {
           ))}
         </section>
       </main>
-    </>
   )
 }
 

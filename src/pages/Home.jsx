@@ -1,7 +1,7 @@
-import '../../styles/pages/Home.css'
-import Banner from '../../components/Banner'
-import Gallery from '../../components/Gallery'
-import ImgBackground from '../../assets/images/banner.jpg'
+import '../styles/pages/Home.css'
+import Banner from '../components/Banner'
+import Gallery from '../components/Gallery'
+import ImgBackground from '../assets/images/banner.jpg'
 
 function Home() {
   return (

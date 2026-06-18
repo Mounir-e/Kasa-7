@@ -89,6 +89,7 @@ video {
   border: 0;
   font-size: 100%;
   vertical-align: baseline;
+  font-family: "Montserrat", sans-serif;
 }
 
 article,
@@ -128,35 +129,10 @@ body::-webkit-scrollbar-thumb {
   border-radius: 2px;
 }
 
-body,
-header,
-main,
-aside,
-footer {
-  font-family: "Montserrat", sans-serif;
-}
-
 menu,
 ol,
 ul {
   list-style: none;
-}
-
-blockquote,
-q {
-  quotes: none;
-}
-
-blockquote::before,
-blockquote::after,
-q::before,
-q::after {
-  content: "";
-}
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
 }
 
 a {
@@ -182,7 +158,7 @@ main{
   max-width: 1240px;
   margin: 0 auto;
 }
-@media (max-width: 769px) {
+@media (max-width: 376px) {
   main{
     max-width: 335px;
   }

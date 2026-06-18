@@ -18,7 +18,7 @@
   color: #ffffff;
 }
 
-@media (max-width: 769px) {
+@media (max-width: 376px) {
   .footer {
     justify-content: center;
     height: 209px;

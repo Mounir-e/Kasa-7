@@ -40,21 +40,7 @@
   text-decoration: underline;
 }
 
-@media (max-width: 1240px) {
-  .logo {
-    max-height: 50px;
-  }
-
-  .nav {
-    gap: 20px;
-  }
-
-  .navLink {
-    font-size: 1rem;
-  }
-}
-
-@media (max-width: 426px) {
+@media (max-width: 376px) {
   .header {
     margin: 20px auto;
     display: flex;

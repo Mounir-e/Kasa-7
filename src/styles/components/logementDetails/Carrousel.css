@@ -52,7 +52,7 @@
   transform: translateX(-50%);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 376px) {
   .carrousel {
     height: 255px;
   }
