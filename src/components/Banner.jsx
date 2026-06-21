@@ -15,7 +15,7 @@ function Banner({ picture, title, alt, variant = 'default' }) {
 Banner.propTypes = {
   picture: PropTypes.string.isRequired,
   title: PropTypes.string,
-  alt: PropTypes.string,
+  alt: PropTypes.string.isRequired,
   variant: PropTypes.string
 }
 

@@ -5,10 +5,8 @@ import ImgBackground from '../assets/images/banner.jpg'
 
 function Home() {
   return (
-    <>
     <main className="home">
 <Banner
-className="bannerImgHome"
   picture={ImgBackground}
   title="Chez vous, partout et ailleurs"
   alt="Falaises en bord de mer"
@@ -16,7 +14,6 @@ className="bannerImgHome"
 />
 <Gallery />
     </main>
-    </>
   )
 }
 

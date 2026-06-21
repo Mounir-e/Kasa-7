@@ -4,9 +4,10 @@ import arrowLeft from '../../assets/icons/arrow-left.svg'
 import arrowRight from '../../assets/icons/arrow-right.svg'
 import '../../styles/components/logementDetails/Carrousel.css'
 
-function Carrousel({ pictures }) {
+function Carrousel({ pictures, title }) {
   const [currentIndex, setCurrentIndex] = useState(0)
   const picturesCount = pictures.length
+  const hasMultiplePictures = picturesCount > 1
 
   const showPreviousImage = () => {
     setCurrentIndex((previousIndex) =>
@@ -28,10 +29,11 @@ function Carrousel({ pictures }) {
     <section className="carrousel" aria-label="Photos du logement">
       <img
         src={pictures[currentIndex]}
-        alt={`Logement - image ${currentIndex + 1}`}
+       alt={`${title} - image ${currentIndex + 1} sur ${picturesCount}`}
         className="carrouselImage"
       />
-
+{hasMultiplePictures && (
+  <>
       <button
         type="button"
         className="carrouselButton carrouselButtonLeft"
@@ -53,6 +55,8 @@ function Carrousel({ pictures }) {
       <p className="carrouselCounter">
         {currentIndex + 1}/{picturesCount}
       </p>
+      </>
+      )}
     </section>
   )
 }

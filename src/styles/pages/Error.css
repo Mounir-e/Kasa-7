@@ -25,7 +25,9 @@
   color: #000000;
   font-size: 1.125rem;
 }
-
+.errorLink:hover {
+  color: #000000;
+}
 @media (max-width: 376px) {
   .error {
     gap: 24px;

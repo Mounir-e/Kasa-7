@@ -4,7 +4,6 @@ import '../styles/components/Thumb.css'
 
 function Thumb({ logement }) {
   return (
-    <>
     <Link to={`/logement/${logement.id}`} className="thumbCard">
       <li>
           <h2 className="thumbCardTitle">{logement.title}</h2>
@@ -15,7 +14,7 @@ function Thumb({ logement }) {
         />
       </li>
     </Link>
-    </>
+    
   )
 }
 

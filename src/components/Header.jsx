@@ -3,6 +3,8 @@ import  '../styles/components/Header.css'
 import logo from '../assets/logos/main-logo.svg'
 
 function Header() {
+const getNavLinkClass = ({ isActive }) =>
+  isActive ? 'navLink navLinkActive' : 'navLink'
 
   return (
     <header>
@@ -11,12 +13,10 @@ function Header() {
         <nav className="nav">
           <ul className="menu">
             <li className="menuItem">
-              <NavLink to="/" end className={({ isActive }) =>
-    isActive ? 'navLink navLinkActive' : 'navLink'}>Accueil</NavLink>
+              <NavLink to="/" end className={getNavLinkClass}>Accueil</NavLink>
             </li>
             <li className="menuItem">
-              <NavLink to="/about" className={({ isActive }) =>
-    isActive ? 'navLink navLinkActive' : 'navLink'}>A Propos</NavLink>
+              <NavLink to="/about" className={getNavLinkClass}>À Propos</NavLink>
             </li>
           </ul>
         </nav>

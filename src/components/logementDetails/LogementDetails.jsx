@@ -7,17 +7,27 @@ import Title from './Title'
 import '../../styles/components/logementDetails/LogementDetails.css'
 
 function LogementDetails({ logement }) {
+  const {
+    title,
+    location,
+    host,
+    tags,
+    rating,
+    description,
+    equipments,
+  } = logement
   return (
     <>
       <div className="logementDetails">
         <div className="logementDetailsInfo">
-          <Title title={logement.title} location={logement.location} />
-          <Tags tags={logement.tags} />
+          <Title title={title} 
+          location={location} />
+          <Tags tags={tags} />
         </div>
 
         <div className="logementDetailsHost">
-          <Host host={logement.host} />
-          <Rating rating={logement.rating} />
+          <Host host={host} />
+          <Rating rating={rating} />
         </div>
       </div>
 
@@ -25,13 +35,14 @@ function LogementDetails({ logement }) {
         <Collapse
           id="description"
           label="Description"
-          content={logement.description}
+          content={description}
+          variant="logement"
         />
         <Collapse
           id="equipments"
           label="Equipements"
-          contentList={logement.equipments}
-          
+          contentList={equipments}
+          variant="logement"
         />
       </div>
     </>

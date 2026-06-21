@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import collapseArrow from '../assets/icons/collapse-arrow.svg'
 import '../styles/components/Collapse.css'
 
-function Collapse({ id, label, content, contentList, variant='default' }) {
+function Collapse({ id, label, content, contentList, variant='about' }) {
   const [isOpen, setIsOpen] = useState(false)
   const contentId = `${id}-content`
 
@@ -41,12 +41,9 @@ function Collapse({ id, label, content, contentList, variant='default' }) {
 Collapse.propTypes = {
   id: PropTypes.string.isRequired,
   label: PropTypes.string.isRequired,
-  content: PropTypes.oneOfType([
-    PropTypes.string,
-    PropTypes.arrayOf(PropTypes.string),
-  ]),
+  content: PropTypes.string,
   contentList: PropTypes.arrayOf(PropTypes.string),
-    variant: PropTypes.string
+    variant: PropTypes.oneOf(['about', 'logement'])
 }
 
 export default Collapse

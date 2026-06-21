@@ -1,4 +1,5 @@
 import { useParams } from 'react-router-dom'
+import PropTypes from 'prop-types'
 import Carrousel from '../components/logementDetails/Carrousel'
 import LogementDetails from '../components/logementDetails/LogementDetails'
 import logements from '../datas/logements.json'
@@ -15,10 +16,18 @@ function Logement() {
 
   return (
     <main className="logementPage">
-      <Carrousel pictures={logement.pictures} />
-      <LogementDetails logement={logement} />
+      <Carrousel 
+      key={logement.id}
+      pictures={logement.pictures} 
+      title={logement.title} />
+      <LogementDetails 
+      logement={logement} />
     </main>
   )
+}
+
+Logement.PropTypes = {
+title: PropTypes.string.isRequired
 }
 
 export default Logement
