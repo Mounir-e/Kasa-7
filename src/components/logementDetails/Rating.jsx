@@ -5,13 +5,16 @@ import '../../styles/components/logementDetails/Rating.css'
 
 function Rating({ rating }) {
   const ratingValue = Number(rating)
-  const maxRating = 5
+  const starNumbers = [1, 2, 3, 4, 5]
 
   return (
-    <div className="logementRating" aria-label={`Note ${ratingValue} sur ${maxRating}`}>
-      {Array.from({ length: maxRating }).map((_, index) => {
-        const starNumber = index + 1
-        const starIcon = starNumber <= ratingValue ? starActive : starInactive
+    <div
+      className="logementRating"
+      aria-label={`Note ${ratingValue} sur ${starNumbers.length}`}
+    >
+      {starNumbers.map((starNumber) => {
+        const isActive = starNumber <= ratingValue
+        const starIcon = isActive ? starActive : starInactive
 
         return (
           <img

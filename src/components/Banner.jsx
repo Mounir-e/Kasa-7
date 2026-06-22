@@ -1,7 +1,7 @@
 import PropTypes from "prop-types"
 import '../styles/components/Banner.css'
 
-function Banner({ picture, title, alt, variant = 'default' }) {
+function Banner({ picture, title, alt, variant = 'home' }) {
   return (
     <div className="banner">
         <img className={`bannerImg ${variant === 'home' ? 'bannerImgHome' : 'bannerImgAbout'}`}
