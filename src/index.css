@@ -141,7 +141,17 @@ main{
   max-width: 1240px;
   margin: 0 auto;
 }
-@media (max-width: 376px) {
+@media (max-width: 1240px) {
+  main {
+    max-width: 950px;
+  }
+}
+@media (max-width: 768px) {
+  main {
+    max-width: 700px;
+  }
+}
+@media (max-width: 767px) {
   main{
     max-width: 335px;
   }
