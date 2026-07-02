@@ -38,7 +38,7 @@
   filter: drop-shadow(0 0 8px #000000);
 }
 
-@media (max-width: 376px) {
+@media (max-width: 769px) {
   .banner {
     height: 111px;
     border-radius: 10px;

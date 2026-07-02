@@ -68,7 +68,7 @@
 .tabContentOpen {
   display: block;
 }
- @media (max-width: 376px) {
+ @media (max-width: 768px) {
   .tab {
     font-size: 13px;
   }

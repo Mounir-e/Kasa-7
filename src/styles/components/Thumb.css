@@ -50,9 +50,12 @@
     max-width: calc(50% - 40px);
     aspect-ratio: initial;
   }
+  .thumbCardTitle {
+    top: auto;
+  }
 }
 
-@media (max-width: 376px) {
+@media (max-width: 426px) {
   .thumbCard {
     flex: 0 1 100%;
     max-width: 100%;
